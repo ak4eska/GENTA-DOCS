@@ -425,3 +425,64 @@ local structure = {
 | PACKET_SEND_PARTICLE_EFFECT_V2    | 36    |
 | GAME_ACTIVE_ARROW_TO_ITEM         | 37    |
 | GAME_SELECT_TILE_INDEX            | 38    |
+
+
+### AddHook
+``
+AddHook(string: GentaHook, int/string: HookLabel, function: callback)
+``
+
+### Getting Player
+- ```lua
+  getLocal()
+  ```
+- ```lua
+  getPlayerByNetID(netid)
+  ```
+- ```lua
+  getPlayerList()
+  ```
+### Getting Player Inventory
+- ```lua
+  getInventory()
+  ```
+### Getting World Info
+- ```lua
+  getWorld()
+  ```
+### Getting World Tile
+- ```lua
+  checkTile(x, y)
+  ```
+- ```lua
+  getTile()
+  ```
+- ```lua
+  getExtraTile()
+  ```
+### Getting World Object
+- ```lua
+  getWorldObject()
+  ```
+### Getting World NPC
+- ```lua
+  getNPC()
+  ```
+### Getting Game Touch
+- ```lua
+  getTouchAtScreenPos()
+  ```
+- ```lua
+  getTouchAtWorldPos()
+  ```
+### Getting Game Camera
+- ```lua
+  getCamera()
+  ```
+- ```lua
+  worldToScreen(float x, float y)
+  ```
+### Setting World Camera
+- ```lua
+  setCamera(float x, float y)
+  ```
