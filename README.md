@@ -43,8 +43,8 @@ Soon as possible ~
 - [EmbedBuilder](#embedbuilder)
 - [DiscordWebhook](#discordwebhook)
 
-### Enum
-- [Enums](#enums)
+### Enums list
+- [CheatCode](#cheatcode)
 
 ### Genta Hook List
  - OnTextPacket
