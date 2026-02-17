@@ -31,10 +31,20 @@ Soon as possible ~
 - [WorldObject](#worldobject)
 - [NPCList](#npclist)
 - [Inventory](#inventory)
-- - [Vector2i or Vector2f](#vector2i-or-vector2f)
+- [Vector2i or Vector2f](#vector2i-or-vector2f)
+- [Vector3i or Vector3f](#vector3i-or-vector3f)
+- [Vector4i or Vector4f](#vector4i-or-vector4f)
 
 ### Discord Webhook Structure
-Soon as possible ~
+- [EmbedAuthor](#embedauthor)
+- [EmbedFields](#embedfields)
+- [EmbedURL](#embedurl)
+- [EmbedFooter](#embedfooter)
+- [EmbedBuilder](#embedbuilder)
+- [DiscordWebhook](#discordwebhook)
+
+### Enums
+- [Enums](#enums)
 
 ### Genta Hook List
  - OnTextPacket
@@ -254,3 +264,164 @@ local structure = {
 | OnRawPacket         | TankPacketStruct raw|
 | OnGameUpdatePacket  | TankPacketStruct raw|
 | OnENetInit		  | String ip, int port	|
+
+### Discord Webhook Structure
+
+## EmbedAuthor
+```lua
+local structure = {
+      string: name,
+      string: url,
+      string: icon_url
+}
+```
+
+## EmbedFields
+```lua
+local structure = {
+      string: name,
+      string: value,
+      bool: inline
+}
+```
+
+## EmbedURL
+```lua
+local structure = {
+      string: url
+}
+```
+
+## EmbedFooter
+```lua
+local structure = {
+      string: text,
+      string: icon_url
+}
+```
+
+## EmbedBuilder
+```lua
+local structure = {
+      EmbedAuthor: author,
+      string: title,
+      string: url,
+      string: description,
+      string: color,
+      list: fields,
+      EmbedURL: thumbnail,
+      EmbedURL: image,
+      EmbedFooter: footer
+}
+```
+
+## DiscordWebhook
+```lua
+local structure = {
+      string: username,
+      string: avatar_url,
+      string: content,
+      bool: useEmbeds,
+      EmbedBuilder: embeds
+}
+```
+
+### Enums
+
+## CheatCode
+| Label                 | Value |
+|-----------------------|-------|
+| Fast Fruit            | 0     |
+| Ghost Mode            | 1     |
+| Night Vision          | 2     |
+| Can See Ghost         | 3     |
+| Anti Bounce           | 4     |
+| Death Anywhere        | 5     |
+| No Clip               | 6     |
+| Bypass Death          | 7     |
+| Show Door Label       | 8     |
+| Show Sign Label       | 9     |
+| Anti Portal           | 10    |
+| Dev Mode              | 11    |
+| Fast Wheel            | 12    |
+| Real Fake Bubble      | 13    |
+| Show Debug            | 14    |
+| Anti State            | 15    |
+| No Particle           | 16    |
+| Path Finder           | 17    |
+| Skip Update           | 18    |
+| Anti Tile Activation  | 19    |
+| Anti Respawn          | 20    |
+| Anti Freeze State     | 21    |
+| Can't Take Item       | 22    |
+| Can't move            | 23    |
+| Fast Dice             | 24    |
+| Auto Acc              | 25    |
+| Mod Fly               | 26    |
+| Extractor Dynamo      | 27    |
+| Anti OnKilled         | 28    |
+| No Render Image       | 29    |
+| Free Camera           | 30    |
+| Show Ready Harvest    | 31    |
+
+## Toast Type
+| Flags                | Value |
+|--------------------------------|-------|
+| ImGuiToastType_None      | 0     |
+| ImGuiToastType_Success   | 1     |
+| ImGuiToastType_Warning   | 2     |
+| ImGuiToastType_Error | 3 |
+| ImGuiToastType_Info          | 4     |
+
+
+## ENet Packet Flag
+| Flags                | Value |
+|--------------------------------|-------|
+| ENET_PACKET_FLAG_RELIABLE      | 0     |
+| ENET_PACKET_FLAG_UNSEQUENCED   | 1     |
+| ENET_PACKET_FLAG_NO_ALLOCATE   | 2     |
+| ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT | 3 |
+| ENET_PACKET_FLAG_SENT          | 8     |
+
+## Growtopia Raw Packet Type
+| Packet Type                       | Value |
+|-----------------------------------|-------|
+| PACKET_STATE                      | 0     |
+| PACKET_CALL_FUNCTION              | 1     |
+| PACKET_UPDATE_STATUS              | 2     |
+| PACKET_TILE_CHANGE_REQUEST        | 3     |
+| PACKET_SEND_MAP_DATA              | 4     |
+| PACKET_SEND_TILE_UPDATE_DATA      | 5     |
+| PACKET_SEND_TILE_UPDATE_DATA_MULTIPLE | 6 |
+| PACKET_TILE_ACTIVATE_REQUEST      | 7     |
+| PACKET_TILE_APPLY_DAMAGE          | 8     |
+| PACKET_SEND_INVENTORY_STATE       | 9     |
+| PACKET_ITEM_ACTIVATE_REQUEST      | 10    |
+| PACKET_ITEM_ACTIVATE_OBJECT_REQUEST | 11  |
+| PACKET_SEND_TILE_TREE_STATE       | 12    |
+| PACKET_MODIFY_ITEM_INVENTORY      | 13    |
+| PACKET_ITEM_CHANGE_OBJECT         | 14    |
+| PACKET_SEND_LOCK                  | 15    |
+| PACKET_SEND_ITEM_DATABASE_DATA    | 16    |
+| PACKET_SEND_PARTICLE_EFFECT       | 17    |
+| PACKET_SET_ICON_STATE             | 18    |
+| PACKET_ITEM_EFFECT                | 19    |
+| PACKET_SET_CHARACTER_STATE        | 20    |
+| PACKET_PING_REPLY                 | 21    |
+| PACKET_PING_REQUEST               | 22    |
+| PACKET_GOT_PUNCHED                | 23    |
+| PACKET_APP_CHECK_RESPONSE         | 24    |
+| PACKET_APP_INTEGRITY_FAIL         | 25    |
+| PACKET_DISCONNECT                 | 26    |
+| PACKET_BATTLE_JOIN                | 27    |
+| PACKET_BATTLE_EVEN                | 28    |
+| PACKET_USE_DOOR                   | 29    |
+| PACKET_SEND_PARENTAL              | 30    |
+| PACKET_GONE_FISHIN                | 31    |
+| PACKET_STEAM                      | 32    |
+| PACKET_PET_BATTLE                 | 33    |
+| PACKET_NPC                        | 34    |
+| PACKET_SPECIAL                    | 35    |
+| PACKET_SEND_PARTICLE_EFFECT_V2    | 36    |
+| GAME_ACTIVE_ARROW_TO_ITEM         | 37    |
+| GAME_SELECT_TILE_INDEX            | 38    |
