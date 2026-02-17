@@ -43,7 +43,7 @@ Soon as possible ~
 - [EmbedBuilder](#embedbuilder)
 - [DiscordWebhook](#discordwebhook)
 
-### Enums
+### Enum
 - [Enums](#enums)
 
 ### Genta Hook List
