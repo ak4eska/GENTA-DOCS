@@ -486,3 +486,32 @@ AddHook(string: GentaHook, int/string: HookLabel, function: callback)
 - ```lua
   setCamera(float x, float y)
   ```
+### Getting Device Info
+- ```lua
+  getMac()
+  ```
+- ```lua
+  getGid()
+  ```
+### Setting Device Info
+- ```lua
+  randomGid()
+  ```
+- ```lua
+  randomMac()
+  ```
+- ```lua
+  setGid(string: newGoogleID) : max 37 characters
+  ```
+- ```lua
+  setMac(string: newMac) : max 18 character
+  ```
+### Packet Sender
+- ```lua
+  sendPacket(int: type, string: packet)
+  ```
+- ```lua
+  sendPacketRaw(bool: send_to_client, TankPacketStruct packet)
+- ```lua
+  sendVariant(string: variant, int: netID, int: delay)
+  ```
