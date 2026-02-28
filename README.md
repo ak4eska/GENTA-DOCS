@@ -4,7 +4,7 @@ Before we start, you can start learning basic of lua in [ Here ](https://www.lua
 
 
 ### Resourcements
-- [ GENTAHAX-DOCS-OFFICIALLY ](https://github.com/GENTA7740/GENTA-HAX-DOCS/blob/main/DOCS-ANDROID.md)
+- [ GENTAHAX-DOCS-OFFICIALL ](https://github.com/GENTA7740/GENTA-HAX-DOCS/blob/main/DOCS-ANDROID.md)
 - [ImGui](https://github.com/ocornut/imgui)
 - [Lua](https://lua.org)
 - [OpenSSL](https://www.openssl.org/)
