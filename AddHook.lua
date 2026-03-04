@@ -14,3 +14,8 @@ AddHook("OnTextPacket", "x024", function(type, packet)
       end
 end)
 
+-- OnTouch
+AddHook("OnTouch", "0x24", function(x, y)
+      logToConsole("X: ".. x .."Y: ".. y)
+end)
+
