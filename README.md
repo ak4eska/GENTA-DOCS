@@ -515,3 +515,22 @@ AddHook(string: GentaHook, int/string: HookLabel, function: callback)
 - ```lua
   sendVariant(string: variant, int: netID, int: delay)
   ```
+### Getting System Timing
+- ```lua
+  getCurrentTimeInternal()
+  ```
+### Usefull API
+- ```lua
+  arrowToItem(bool: isFloatingObject, int: ItemID_Target)
+  ```
+- ```lua
+  getDiscordID()
+  ```
+- ```lua
+  checkPath(int: x, int: y)
+  ```
+- ```lua
+  requestCollect(int: x, int: y, int: ItemID)
+  ```
+- ```lua
+  requestTileChange(int: x, int: y, int: ItemID)
