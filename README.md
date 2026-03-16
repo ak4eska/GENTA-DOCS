@@ -102,7 +102,7 @@ local structure = {
       string: country,
       int: userId,
       int: status,
-      int: netid,
+      int: netId,
       bool: facing,
       uint32_t: hair,
       uint32_t: shirt,
