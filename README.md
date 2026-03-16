@@ -534,3 +534,19 @@ AddHook(string: GentaHook, int/string: HookLabel, function: callback)
   ```
 - ```lua
   requestTileChange(int: x, int: y, int: ItemID)
+- ```lua
+  AddHook(string: GentaHook, string: HookLabel, function)
+- ```lua
+  RemoveHooks()
+  ```
+- ```lua
+  RemoveHook(string: HookLabel)
+  ```
+- ```lua
+  sleep(int: sleep_in_ms)
+  ```
+- ```lua
+  doToast(int: toastType, int: dissMissTimeInMilliSeconds, string: text)
+- ```lua
+  callToast(string: text, int: type) -- 1 for long time, 0 for short time (Based from java toast)
+  
