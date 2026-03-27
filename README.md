@@ -16,7 +16,7 @@ Android/media/GENTAHAX/Script/here.lua
 ```
 
 ### Function
-Soon as possible ~
+- [Usefull API ](#usefull-api)
 
 ### Structure
 - [TankPacketStruct](#tankpacketstruct)
