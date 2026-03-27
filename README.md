@@ -549,4 +549,14 @@ AddHook(string: GentaHook, int/string: HookLabel, function: callback)
   doToast(int: toastType, int: dissMissTimeInMilliSeconds, string: text)
 - ```lua
   callToast(string: text, int: type) -- 1 for long time, 0 for short time (Based from java toast)
+  ```
+- ```lua
+  getScreenSize()
+  ```
+- ```lua
+  runThread(function(), optional: HookLabel)
+  ```
+- ```lua
+  killAllThread()
+  ```
   
