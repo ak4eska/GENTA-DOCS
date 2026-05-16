@@ -257,13 +257,13 @@ local structure = {
 ## Genta Hook
 |  GentaHook           | Parameter              |
 |---------------------|------------------------|
-| OnTextPacket        | int flag, String packet	   |
-| OnVarlist           | Variantlist_t[], int netID  |
-| OnTouch             | float x, float y    |
-| OnRender            | int deltaTime    	|
+| OnTextPacket        | int: flag, String: packet	   |
+| OnVarlist           | String: Variantlist, int: netID  |
+| OnTouch             | float: x, float: y    |
+| OnRender            | int: deltaTime    	|
 | OnRawPacket         | TankPacketStruct raw|
 | OnGameUpdatePacket  | TankPacketStruct raw|
-| OnENetInit		  | String ip, int port	|
+| OnENetInit		  | String: ip, int: port	|
 
 ### Discord Webhook Structure
 
