@@ -261,8 +261,8 @@ local structure = {
 | OnVarlist           | String: Variantlist, int: netID  |
 | OnTouch             | float: x, float: y    |
 | OnRender            | int: deltaTime    	|
-| OnRawPacket         | TankPacketStruct raw|
-| OnGameUpdatePacket  | TankPacketStruct raw|
+| OnRawPacket         | TankPacketStruct: raw|
+| OnGameUpdatePacket  | TankPacketStruct: raw|
 | OnENetInit		  | String: ip, int: port	|
 
 ### Discord Webhook Structure
