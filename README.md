@@ -480,11 +480,11 @@ AddHook(string: GentaHook, int/string: HookLabel, function: callback)
   getCamera()
   ```
 - ```lua
-  worldToScreen(float x, float y)
+  worldToScreen(float: x, float: y)
   ```
 ### Setting World Camera
 - ```lua
-  setCamera(float x, float y)
+  setCamera(float: x, float: y)
   ```
 ### Getting Device Info
 - ```lua
